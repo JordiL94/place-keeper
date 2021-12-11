@@ -18,6 +18,53 @@
 
 <body>
 
+    <form class="settings-form">
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Navigate
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <a class="dropdown-item" type="button" href="map.html">Map</a>
+                  <a class="dropdown-item" type="button" href="index.html">Homepage</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="required-email">Email address</label>
+                <input type="email" class="required-email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label for="body">Set Background Color</label>
+                    <input type="color" id="body" name="body"
+                            value="#f6b73c">
+                </div>
+                <div>
+                    <label for="text">Set Text Color</label>
+                    <input type="color" id="text" name="text"
+                        value="#e66465">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label for="birth">Birth date</label>
+                    <input type="date" name="birth-date"
+                        value="yyyy-mm-dd"
+                        min="1901-12-12" max="2003-12-12">
+                </div>
+                <div>
+                    <label for="birthtime">Birth time</label>
+                    <input type="time" name="birth-time" step="2">
+                </div>
+            </div> 
+
+            <input class="submit-button btn btn-primary" type="submit">
+        </div> 
+    </form>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
